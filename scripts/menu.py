@@ -1,4 +1,5 @@
 import sys
+import subprocess
 
 def asciiArt():
     
@@ -8,9 +9,9 @@ def menu():
     userInput = input(">")
 
     if(userInput=="1"):
-        sys.call("./showNetworks.sh > interfaces.txt")
+        subprocess.Popen("./showNetworks.sh", ">", "interfaces.txt")
         print("Available Networks: ")
-        sys.call("cat interfaces.txt")
+        subprocess.Popen(["cat","interfaces.txt"])
 
     elif(userInput=="2"):
         print("Enter Attack Option\n1) Only Capture Handshakes\n2) Only Aggressive Capture Handshakes\n3) Capture and Send to GCP to crack\n4) Agressive Capture and Send to GCP to Crack\n5) Evil Twin (Bwahaha)\n6) Deauth Option\n")
