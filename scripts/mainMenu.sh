@@ -32,12 +32,46 @@ do
     fi
 
     if [[ "$option" == 2 ]]; then
-        echo ""
-        echo "Enter BSSID: "
-        read -r victimBSSID
-        echo "Enter channel: "
-        read -r victimChannel
-        echo ""
+        echo "Enter attack option"
+        echo "1 ) only capture handshakes"
+        echo "2 ) only aggressive capture handshakes"
+        echo "3 ) capture and send to GCP to crack"
+        echo "4 ) aggressive capture and send to GCP to crack"
+        echo "5 ) Evil Twin"
+        echo "6 ) DeauthOption"
+        read -r attackOption
+        
+        if [[ -z "$attackOption" ]]; then
+            echo ""
+            echo "Not a valid option"
+            echo ""
+        fi
+
+        if [[ "$attackOption" == 1 ]]; then
+            ./captureHandshakes.sh
+        fi
+
+        if [[ "$attackOption" == 2 ]]; then
+            ./aggressiveCapture.sh
+        fi
+
+        if [[ "$attackOption" == 3 ]]; then
+            ./captureHandshakes.sh
+            ./sendToGCP.sh
+        fi
+
+        if [[ "$attackOption" == 4 ]]; then
+            ./aggressiveCapture.sh
+            ./sendToGCP.sh
+        fi 
+
+        if [[ "$attackOption" == 5 ]]; then
+            ./evilTwin.sh
+        fi
+
+        if [[ "$attackOption" == 6 ]]; then
+            ./deauth.sh
+        fi
     fi
 
     if [[ "$option" == 3 ]]; then
