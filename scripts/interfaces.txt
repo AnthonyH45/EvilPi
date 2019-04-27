@@ -1,0 +1,6 @@
+
+PHY	Interface	Driver		Chipset
+
+phy1	wlan0mon	ath9k_htc	Atheros Communications, Inc. AR9271 802.11n
+phy0	wlp2s0		ath9k		Qualcomm Atheros AR9485 Wireless Network Adapter (rev 01)
+
