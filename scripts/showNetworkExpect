@@ -1,0 +1,5 @@
+#!/usr/bin/expect -f
+
+spawn ./showNetworks.sh
+sleep 5
+send \x03
