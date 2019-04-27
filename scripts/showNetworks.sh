@@ -1,2 +1,3 @@
 #!/bin/bash
-airodump-ng wlan0mon -w networks --write-interval 30 -o csv
+interface=$(cat interfaceToUse.txt)
+airodump-ng $interface -w networks --write-interval 30 -o csv

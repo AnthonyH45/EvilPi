@@ -6,6 +6,9 @@ import time
 def startInterface():
     subprocess.Popen("./startInterface.sh", shell=True)
 
+def stopInterface():
+    subprocess.Popen("./stopInterface.sh", shell=True)
+
 def skull():
     subprocess.call("clear",shell=True)
     subprocess.call("cat skull.txt", shell=True)
@@ -37,6 +40,7 @@ def menu():
             subprocess.Popen("./deauth.sh", shell=True)
     elif(userInput=="3"):
         print("Bye")
+        stopInterface()
         sys.exit(0)
     else:
         print("Wrong input. Try Again.")
