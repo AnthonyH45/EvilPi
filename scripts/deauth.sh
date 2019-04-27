@@ -8,4 +8,4 @@ read -r vChannel
 
 echo $vBSSID > blacklist
 
-sudo mdk3 wlan0mon d -b blacklist -c 6
+sudo mdk3 wlan1mon d -b blacklist -c 6

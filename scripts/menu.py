@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import sys
 import subprocess
 
@@ -12,7 +13,7 @@ def menu():
 
     elif(userInput=="2"):
         print("Enter Attack Option\n1) Only Capture Handshakes\n2) Only Aggressive Capture Handshakes\n3) Capture and Send to GCP to crack\n4) Agressive Capture and Send to GCP to Crack\n5) Evil Twin (Bwahaha)\n6) Deauth Option")
-        userInput == input("> ")
+        userInput = input("> ")
 
         if(userInput=="1"):
             subprocess.Popen("./captureHandshakes.sh", shell=True)
