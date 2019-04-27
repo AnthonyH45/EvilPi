@@ -1,6 +1,4 @@
 #!/bin/bash
 
-airmon-ng >> interfaces.txt
-
-echo "Enter the interface"
-
+interface=$(airmon-ng | grep phy1 | awk '{print $2}')
+echo $interface
