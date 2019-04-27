@@ -3,6 +3,9 @@ import sys
 import subprocess
 import time
 
+def startInterface():
+    subprocess.Popen("./startInterface.sh", shell=True)
+
 def skull():
     subprocess.call("clear",shell=True)
     subprocess.call("cat skull.txt", shell=True)
@@ -39,6 +42,7 @@ def menu():
         print("Wrong input. Try Again.")
 
 def main():
+    startInterface()
     skull()
     while(True):
         try:
