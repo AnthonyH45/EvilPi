@@ -19,11 +19,12 @@ while [ loop ] do
     fi
 
     if [[ "$option" == 1 ]]; then 
-        
+        ./showNetworks.sh > interfaces.txt
+        echo "available networks: " for i in 'cat interfaces.txt'; do echo $2; done
     fi
 
     if [[ "$option" == 2 ]]; then
-
+        
     fi
 
     if [[ "$option" == 3 ]]; then
