@@ -1,2 +1,2 @@
 #!/bin/bash
-airodump-ng -M wlan0mon > networks.txt
+airodump-ng  wlan0mon -w /root/Documents/captures/network
