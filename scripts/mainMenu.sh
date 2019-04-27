@@ -32,6 +32,7 @@ do
     fi
 
     if [[ "$option" == 2 ]]; then
+        echo ""
         echo "Enter attack option"
         echo "1 ) only capture handshakes"
         echo "2 ) only aggressive capture handshakes"
