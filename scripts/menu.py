@@ -20,9 +20,9 @@ def menu():
     userInput = input("> ")
 
     if(userInput=="1"):
-        subprocess.Popen("./showNetworks.sh > interfaces.txt", shell=True)
+        subprocess.Popen("./showNetworks.sh", shell=True)
         print("Available Networks: ")
-        subprocess.Popen("cat interfaces.txt", shell=True)
+        subprocess.Popen("cat networks.txt", shell=True)
 
     elif(userInput=="2"):
         print("Enter Attack Option\n1) Only Capture Handshakes\n2) Only Aggressive Capture Handshakes\n3) Capture and Send to GCP to crack\n4) Agressive Capture and Send to GCP to Crack\n5) Evil Twin (Bwahaha)\n6) Deauth Option")
@@ -41,8 +41,9 @@ def menu():
             subprocess.Popen("./deauth.sh", shell=True)
     elif(userInput=="3"):
         print("Bye")
-        os.remove("interfaceToUse.txt")
         stopInterface()
+        time.sleep(1)
+        os.remove("interfaceToUse.txt")
         sys.exit(0)
     else:
         print("Wrong input. Try Again.")
