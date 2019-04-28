@@ -2,6 +2,7 @@
 import sys
 import subprocess
 import time
+import os
 
 def startInterface():
     subprocess.Popen("./startInterface.sh", shell=True)
@@ -40,6 +41,7 @@ def menu():
             subprocess.Popen("./deauth.sh", shell=True)
     elif(userInput=="3"):
         print("Bye")
+        os.remove("interfaceToUse.txt")
         stopInterface()
         sys.exit(0)
     else:
