@@ -22,7 +22,7 @@ def menu():
     if(userInput=="1"):
         subprocess.Popen("./showNetworks.sh", shell=True)
         print("Available Networks: ")
-        subprocess.call("cat networks.txt", shell=True)
+        subprocess.call("cat network-list.txt", shell=True)
         print("")
 
     elif(userInput=="2"):
