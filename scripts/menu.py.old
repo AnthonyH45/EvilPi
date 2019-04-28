@@ -21,28 +21,39 @@ def menu():
 
     if(userInput=="1"):
         subprocess.Popen("./showNetworks.sh", shell=True)
-        print("\nAvailable Networks: ")
-        subprocess.call("cat network-list.txt", shell=True)
+        print("Available Networks: ")
+        subprocess.call("cat networks.txt", shell=True)
         print("")
 
     elif(userInput=="2"):
         while(True):
-            print("Enter Attack Option\n1) Capture Handshakes\n2) Send to GCP to crack\n3) Evil Twin (Bwahaha)\n4) Deauth Option\n5) Main Menu")
+            print("Enter Attack Option\n1) Only Capture Handshakes\n2) Only Aggressive Capture Handshakes\n3) Capture and Send to GCP to crack\n4) Agressive Capture and Send to GCP to Crack\n5) Evil Twin (Bwahaha)\n6) Deauth Option\n7) Main Menu")
             userInput = input("> ")
             if(userInput=="1"):
-                PROCESS=subprocess.call("./captureHandshakes.sh", shell=True)
-                #PROCESS_TWO=subprocess.Popen("./deauth.sh", shell=False)
+                PROCESS=subprocess.Popen("./captureHandshakes.sh", shell=True)
+                PROCESS.wait()
                 break
             elif(userInput=="2"):
-                PROCESS1=subprocess.Popen("./sendToGCP", shell=True)
+                PROCESS=subprocess.Popen("./aggressiveCapture.sh", shell=True)
+                PROCESS.wait()
                 break
             elif(userInput=="3"):
-                PROCESS=subprocess.Popen("./evilTwin.sh", shell=True)
+                PROCESS=subprocess.Popen("./captureHandshakes.sh; ./sendToGCP.sh", shell=True)
+                PROCESS.wait()
                 break
             elif(userInput=="4"):
-                PROCESS=subprocess.call("./deauth.sh", shell=True)
+                PROCESS=subprocess.Popen("./aggressiveCapture.sh; ./sendToGCP.sh", shell=True)
+                PROCESS.wait()
                 break
             elif(userInput=="5"):
+                PROCESS=subprocess.Popen("./evilTwin.sh", shell=True)
+                PROCESS.wait()
+                break
+            elif(userInput=="6"):
+                PROCESS=subprocess.call("./deauth.sh", shell=True)
+                #PROCESS.wait()
+                break
+            elif(userInput=="7"):
                 break
             else:
                 print("Wrong option. Please try again.")
