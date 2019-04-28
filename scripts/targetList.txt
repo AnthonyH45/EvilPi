@@ -1,0 +1,1 @@
+14:D6:4D:25:AA:64 -41 2 0 0 6 130 WPA2 CCMP PSK DontConnect D-Link
