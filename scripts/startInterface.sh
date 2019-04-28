@@ -2,5 +2,4 @@
 
 interface=$(airmon-ng | grep "Atheros" | awk '{print $2}')
 sudo airmon-ng start $interface > /dev/null
-echo $interface > interfaceToUse.txt
-#echo $interface 
+echo $interface > interfaceToUse.txt 

