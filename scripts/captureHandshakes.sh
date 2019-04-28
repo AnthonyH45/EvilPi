@@ -1,10 +1,8 @@
 #!/bin/bash
 
-echo "Enter the target's BSSID"
-read -r vBSSID
-echo "Enter the target's channel"
-read -r vChannel
+#cat targetList.txt | awk '{print "BSSD: "$1 "\nChannel: "$6 "\nCrypto: "$8 "\nSSID: "$11}'
+targetBSSID=$(cat targetList.txt | awk '{print $1}')
+targetChannel=$(cat targetList.txt | awk '{print $6}')
+interface=$(cat interfaceToUse.txt)
 
-interface=$(cat interFaceToUse.txt)
-
-airodump-ng -c $vChannel --bssid $vBSSID -w psk wlan0mon
+airodump-ng -c $targetChannel --bssid $targetBSSID -w psk $interface
