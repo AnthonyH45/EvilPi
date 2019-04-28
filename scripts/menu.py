@@ -34,7 +34,7 @@ def menu():
                 #PROCESS_TWO=subprocess.Popen("./deauth.sh", shell=False)
                 break
             elif(userInput=="2"):
-                PROCESS1=subprocess.Popen("./sendToGCP", shell=True)
+                PROCESS1=subprocess.Popen("./sendToGCP.sh", shell=True)
                 break
             elif(userInput=="3"):
                 PROCESS=subprocess.Popen("./evilTwin.sh", shell=True)
