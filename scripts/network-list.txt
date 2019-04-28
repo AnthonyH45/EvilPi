@@ -1,5 +1,5 @@
-1:DontConnect
-2:--
-3:UCR-GUEST
-4:eduroam
-5:ucrwpa
+1:eduroam
+2:ucrwpa
+3:DontConnect
+4:UCR-GUEST
+5:--

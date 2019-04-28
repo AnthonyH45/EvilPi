@@ -1,32 +1,42 @@
 *  SSID         BSSID              CHAN 
-   DontConnect  14:D6:4D:25:AA:64  6    
-   --           7C:0E:CE:00:39:84  6    
-   UCR-GUEST    7C:0E:CE:00:39:83  6    
    eduroam      7C:0E:CE:00:39:81  6    
-   --           7C:0E:CE:00:39:82  6    
-   ucrwpa       58:F3:9C:E5:CA:60  1    
-   --           58:F3:9C:F3:5A:32  11   
-   UCR-GUEST    58:F3:9C:E5:CA:63  1    
-   ucrwpa       58:F3:9C:F3:5A:30  11   
+   ucrwpa       7C:0E:CE:00:39:80  6    
+   DontConnect  14:D6:4D:25:AA:64  6    
+   UCR-GUEST    7C:0E:CE:00:39:83  6    
    eduroam      58:F3:9C:E5:CA:61  1    
-   eduroam      58:F3:9C:F3:5A:31  11   
+   --           58:F3:9C:E5:CA:62  1    
+   UCR-GUEST    58:F3:9C:E5:CA:63  1    
+   ucrwpa       58:F3:9C:E5:CA:60  1    
+   --           58:F3:9C:F1:34:82  11   
    UCR-GUEST    58:F3:9C:F3:5A:33  11   
-*  ucrwpa       7C:0E:CE:00:39:80  6    
-   eduroam      58:F3:9C:F1:34:81  11   
-   UCR-GUEST    58:F3:9C:F1:34:83  11   
+   --           58:F3:9C:F3:5A:34  11   
+   eduroam      58:F3:9C:F3:5A:31  11   
    ucrwpa       58:F3:9C:F1:34:80  11   
-   ucrwpa       58:F3:9C:F0:F5:C0  1    
-   --           80:E0:1D:FD:99:32  6    
-   UCR-GUEST    58:F3:9C:F0:F5:C3  1    
-   eduroam      58:F3:9C:F0:F5:C1  1    
-   eduroam      80:E0:1D:FD:99:31  6    
-   UCR-GUEST    80:E0:1D:FD:99:33  6    
+   --           58:F3:9C:F1:34:84  11   
+   eduroam      58:F3:9C:F1:34:81  11   
+*  ucrwpa       58:F3:9C:F3:5A:30  11   
    ucrwpa       80:E0:1D:FD:99:30  6    
-   UCR-GUEST    58:F3:9C:E8:ED:A3  11   
    UCR-GUEST    58:F3:9C:F9:3A:03  11   
-   eduroam      58:F3:9C:E8:ED:A1  11   
+   UCR-GUEST    58:F3:9C:F1:34:83  11   
+   UCR-GUEST    80:E0:1D:FD:99:33  6    
+   --           80:E0:1D:FD:99:34  6    
    eduroam      58:F3:9C:F9:3A:01  11   
-   --           58:F3:9C:F9:3A:04  11   
-   --           58:F3:9C:F9:3A:02  11   
-   ucrwpa       58:F3:9C:F1:2C:B0  11   
+   eduroam      80:E0:1D:FD:99:31  6    
    ucrwpa       58:F3:9C:F9:3A:00  11   
+   UCR-GUEST    58:F3:9C:F0:F5:C3  1    
+   --           58:F3:9C:F0:F5:C2  1    
+   eduroam      58:F3:9C:F0:F5:C1  1    
+   --           80:E0:1D:FC:68:34  1    
+   UCR-GUEST    58:F3:9C:E4:95:33  1    
+   ucrwpa       58:F3:9C:F0:F5:C0  1    
+   eduroam      58:F3:9C:E4:95:31  1    
+   UCR-GUEST    58:F3:9C:FB:AB:B3  6    
+   ucrwpa       58:F3:9C:FB:AB:B0  6    
+   eduroam      58:F3:9C:FB:AB:B1  6    
+   ucrwpa       58:F3:9C:F1:2C:B0  11   
+   eduroam      58:F3:9C:F1:2C:B1  11   
+   UCR-GUEST    7C:0E:CE:00:3E:B3  6    
+   ucrwpa       58:F3:9C:E8:ED:A0  11   
+   UCR-GUEST    80:E0:1D:FC:68:33  1    
+   eduroam      7C:0E:CE:00:3E:B1  6    
+   UCR-GUEST    58:F3:9C:E3:14:A3  11   
