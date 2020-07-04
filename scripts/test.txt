@@ -1,6 +1,2 @@
 *  SSID         BSSID              CHAN 
-   eduroam      7C:0E:CE:00:39:81  6    
-   ucrwpa       7C:0E:CE:00:39:80  6    
    DontConnect  14:D6:4D:25:AA:64  6    
-   UCR-GUEST    7C:0E:CE:00:39:83  6    
-   --           58:F3:9C:E5:CA:62  1    
