@@ -1,6 +1,6 @@
 #!/bin/bash
 
-scp root@34.83.108.72:/home/tony_hallak45/hashcat-5.1.0/Return.txt Return.txt
+scp root@<IP>:/home/tony_hallak45/hashcat-5.1.0/Return.txt Return.txt
 
 while [ true ];
 do
