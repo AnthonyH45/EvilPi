@@ -1,6 +1,6 @@
 #!/bin/bash
 
-scp *.cap root@34.83.108.72:/home/tony_hallak45/hashcat-5.1.0
+scp *.cap root@<IP>:/home/tony_hallak45/hashcat-5.1.0
 rm -f *.cap
 
 while [ true ];
